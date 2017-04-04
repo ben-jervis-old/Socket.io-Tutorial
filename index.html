@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Socket.IO Chat</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/layout.css">
+	</head>
+	<body>
+		<div class="container">
+			<h1>Sample Chat App</h1>
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<span id="title-message">Messages</span>
+					<input id="user-name" class="form-control" autocomplete="off" type="name" placeholder="User Name">
+				</div>
+				<ul class='list-group' id="messages">
+					<li class="list-group-item system-message">Welcome to Chat</li>
+				</ul>
+				<div class="panel-footer">
+					<form action=''>
+						<div class="input-group">
+							<input type="message" class='form-control' id="m" autocomplete="off">
+							<span class="input-group-btn">
+								<button class='btn btn-default'>
+									<i class="glyphicon glyphicon-send"></i>
+								</button>
+							</span>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+		<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+		<script type="text/javascript" src="js/client-side.js"></script>
+	</body>
+</html>

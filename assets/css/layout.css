@@ -1,0 +1,29 @@
+#messages li:nth-child(even) {
+	background: #eee;
+}
+
+#user-name {
+	max-width: 200px;
+	display: inline;
+	position: relative;
+	margin-right: 0;
+	margin-left: auto;
+}
+
+div.panel-heading {
+	display: flex;
+}
+
+#title-message {
+	line-height: 32px;
+}
+
+.system-message {
+	font-style: italic;
+	font-size: 0.8em;
+	color: grey;
+}
+
+.invalid:focus {
+	border-color: red;
+}
